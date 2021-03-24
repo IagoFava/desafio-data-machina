@@ -4,6 +4,10 @@ Iago Fava da Costa
 
 Desafio Data Machina
 
+Há 3 arquivos
+	- Desafio 1
+	- Desafio 2
+	- Rascunho Desafio 2 (explicado no fim)
 _________________________________________________________________________
 O script criado para o desafio 1 é uma aplicação direta do conceito de Standard Normal Distribution que pode ser conferido em:
 https://onlinestatbook.com/2/normal_distribution/standard_normal.html#:~:text=A%20normal%20distribution%20with%20a,called%20a%20standard%20normal%20distribution.&text=Since%20the%20distribution%20has%20a,(or%20above)%20the%20mean.
@@ -50,9 +54,16 @@ Foram encontradas dificuldades ao longo do processo:
 	- Customizar o dito código
 	- Lidar com DateTime
 	- Para o desafio 1, houve confusão sobre o conceito de normalização
-	- 
-
-
+_________________________________________________________________________
+Foi feito upload de uma versão antiga que criei no "Desafio 2", que se chama "Rascunho Desafio 2"
+Essa versão não está polida, mas tem uma grande diferença em relação ao "Desafio 2"
+	- Enquanto que "Desafio 2" calcula o tempo de viagem para cada viagem a cada iteração (para maior precisão),
+		O "Rascunho Desafio 2" calcula todos os trajetos baseados na hora atual e guarda esses valores.
+Existem 2 benefícios aqui, ao custo da precisão:
+	- Melhor performance, pois não há excesso de chamadas de API
+	- Menor custo, pois a API Distance Matrix tem um custo por uso
+O uso do "Desafio 2" e do "Rascunho Desafio 2" dependem dos objetivos da empresa.
+Aqui cabe uma gestão de recursos financeiros e de tempo de processamento.
 _________________________________________________________________________
 A API usada pode ser consultada em:
 https://developers.google.com/maps/documentation/distance-matrix/overview#distance-matrix-advanced
